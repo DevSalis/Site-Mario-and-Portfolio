@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
     <title>Proj. Mario</title>
 </head>
 
 <body>
+    <div class="video-backgrund">
+        <video src="./assets/video.mp4" all="video-clip-oficial-mario-the-movie" autoplay muted loop></video>
+        <div class="backgrund-mascara"></div>
+    </div>
 
 
     <section class="box-1">
-        <img id="img-box-1" src="./assets/logo.png" alt="logo-mario-bros">
+        <img id="img-box-1" src="./assets/logo.png" all="logo-mario-bros">
 
         <h1>SITE DO MARIO</h1>
 
@@ -34,8 +41,12 @@
     </section>
 
     <form>
-        <input placeholder="name">
-        <button>Enviar</button>
+        FALE CONOSCO
+        <input placeholder="name" type="text">
+        <input placeholder="e-mail" type="email">
+        <input placeholder="(00) 0-0000-0000" type="tel">
+        <textarea placeholder="Em que podemos lhe ajudar?"></textarea>
+        <button class="button-form">Enviar</button>s
     </form>
 
 </body>
