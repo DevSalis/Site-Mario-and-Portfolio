@@ -30,7 +30,7 @@
             iure sapiente debitis ratione, repellendus quibusdam nostrum minima soluta expedita assumenda optio ut
             saepe odio.</p>
 
-        <button onclick="enterForm()">Fale conosco</button>
+        <button onclick="enterForm(), sondOpen()">Fale conosco</button>
 
     </section>
 
@@ -44,7 +44,7 @@
         <input placeholder="E-mail" type="email">
         <input placeholder="Fone (00)0-0000-0000" type="tel">
         <textarea placeholder="Em que podemos ajudar?"></textarea>
-        <button submit type="button" class="button-form" onclick="exitForm()">ENVIAR</button>
+        <button submit type="button" class="button-form" onclick="exitForm(), sondEnter()">ENVIAR</button>
     </form>
 
     <div class="backgrund-mascara-form"></div>
@@ -53,6 +53,7 @@
 <script>
     let toForm = document.querySelector(".to-form")
     let exitFormBackgrund = document.querySelector(".backgrund-mascara-form")
+    
 
     function enterForm() {
         toForm.style.left = "700px"
@@ -60,8 +61,18 @@
     }
 
     function exitForm() {
-        toForm.style.left = "-300px"
+        toForm.style.left = "-320px"
         exitFormBackgrund.style.visibility = "hidden"
+    }
+
+    function sondOpen() {
+        var somEntrada = new Audio("assets/Mario-open.mp3");
+        somEntrada.play();
+    }
+
+    function sondEnter() {
+        var somEnvio = new Audio("assets/Mario-Enter-edit.mp3");
+        somEnvio.play();
     }
 </script>
 
