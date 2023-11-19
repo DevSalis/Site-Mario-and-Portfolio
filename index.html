@@ -30,7 +30,7 @@
             iure sapiente debitis ratione, repellendus quibusdam nostrum minima soluta expedita assumenda optio ut
             saepe odio.</p>
 
-        <button>Fale conosco</button>
+        <button onclick="enterForm()">Fale conosco</button>
 
     </section>
 
@@ -38,13 +38,31 @@
         <img src="./assets/mario.png" alt="mario-and-luigi" id="img-box-2">
     </section>
 
-    <form>
+    <form class="to-form">
+        FALE CONOSCO
         <input placeholder="Nome" type="text">
         <input placeholder="E-mail" type="email">
-        <input placeholder="Fone (00)0-0000-0000">
+        <input placeholder="Fone (00)0-0000-0000" type="tel">
         <textarea placeholder="Em que podemos ajudar?"></textarea>
-        <button submit type="button" class="button-form">ENVIAR</button>
+        <button submit type="button" class="button-form" onclick="exitForm()">ENVIAR</button>
     </form>
+
+    <div class="backgrund-mascara-form"></div>
 </body>
+
+<script>
+    let toForm = document.querySelector(".to-form")
+    let exitFormBackgrund = document.querySelector(".backgrund-mascara-form")
+
+    function enterForm() {
+        toForm.style.left = "700px"
+        exitFormBackgrund.style.visibility = "visible"
+    }
+
+    function exitForm() {
+        toForm.style.left = "-300px"
+        exitFormBackgrund.style.visibility = "hidden"
+    }
+</script>
 
 </html>
