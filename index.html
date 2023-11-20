@@ -38,13 +38,13 @@
         <img src="./assets/mario.png" alt="mario-and-luigi" id="img-box-2">
     </section>
 
-    <form class="to-form">
+    <form class="to-form" action="https://formsubmit.co/philip.cost@hotmail.com" method="POST">
         FALE CONOSCO
-        <input placeholder="Nome" type="text">
-        <input placeholder="E-mail" type="email">
-        <input placeholder="Fone (00)0-0000-0000" type="tel">
-        <textarea placeholder="Em que podemos ajudar?"></textarea>
-        <button submit type="button" class="button-form" onclick="exitForm(), sondEnter()">ENVIAR</button>
+        <input placeholder="Nome" type="text" name="name" required>
+        <input placeholder="E-mail" type="email" name="email" required>
+        <input placeholder="Fone (00)0-0000-0000" type="tel" name="tel">
+        <textarea type="text" placeholder="Em que podemos ajudar?" name="info"></textarea>
+        <button type="submit" class="button-form" onclick="exitForm(), sondEnter()">ENVIAR</button>
     </form>
 
     <div class="backgrund-mascara-form"></div>
