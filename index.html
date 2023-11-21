@@ -17,22 +17,41 @@
         <div class="backgrund-mascara"></div>
     </div>
 
-
-    <section class="box-1">
+    <header>
         <img id="img-box-1" alt="logo-mario" src="./assets/logo.png">
-        <h1>PROJETO DEVCLUB - SITE DO MARIO</h1>
 
-        <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+        <nav>
+            <a><img class="gif-caixa" src="./assets/gif-caixinha.gif" alt="caixinha-interrogação">Sobre</a>
+            <a><img class="gif-caixa" src="./assets/gif-caixinha.gif" alt="caixinha-interrogação">Projetos</a>
+            <a><img class="gif-caixa" src="./assets/gif-caixinha.gif" alt="caixinha-interrogação">Quem somos</a>
+        </nav>
+    </header>
 
-        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+    <main>
+        <section class="box-1">
 
-        <button onclick="enterForm(), sondOpen()">Fale conosco</button>
+            <h1>PROJETO DEVCLUB - SITE DO MARIO</h1>
 
-    </section>
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!<br>Você já se encontrou em uma situação
+                de emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de
+                pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais
+                famosos do Reino dos Cogumelos - Mario e Luigi!</p>
 
-    <section class="box-2">
-        <img src="./assets/mario.png" alt="mario-and-luigi" id="img-box-2">
-    </section>
+            <button onclick="enterForm(), sondOpen()">EU QUERO UM SITE COMO ESTE</button>
+
+        </section>
+
+        <section class="box-2">
+            <img src="./assets/mario.png" alt="mario-and-luigi" id="img-box-2">
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-paragrafo">Site desenvolvido utilizando linguagens como HTML, CSS e JS | By. Silas Felipe | Desenvolvedor frontend
+        </p>
+        <a rel="noopener" href="https://api.whatsapp.com/send?phone=+5581989892631&text=Olá, Meu nome é Silas Felipe, sou desenvolvedor frontend. Esse é um texto de apresentação, fique a vontade para apaga-lo e deixar sua duvida, breve responderemos"
+        target="_blank"><img class="whatsapp" src="./assets/img-logo-whatsapp.png" alt="logo-whatsapp"></a>
+    </footer>
 
     <form class="to-form" action="https://formsubmit.co/philip.cost@hotmail.com" method="POST">
         FALE CONOSCO
@@ -49,7 +68,7 @@
 <script>
     let toForm = document.querySelector(".to-form")
     let exitFormBackgrund = document.querySelector(".backgrund-mascara-form")
-    
+
 
     function enterForm() {
         toForm.style.left = "700px"

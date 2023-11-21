@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +8,33 @@
 body {
     display: flex;
     height: 100vh;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+main {
+    display: flex;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 45px;
+    font-size: 35px;
+}
+
+.gif-caixa {
+    width: 60px;
+}
+
+a {
+    margin-left: 90px;
+    color: aliceblue;
+    align-items: center;
 }
 
 #img-box-1 {
@@ -18,11 +42,15 @@ body {
 }
 
 #img-box-2 {
-    height: 600px;
+    height: 400px;
 }
 
 .box-1 {
-    width: 40%;
+    width: 50%;
+}
+
+.box-2 {
+    margin-left: 15%;
 }
 
 .video-backgrund {
@@ -34,7 +62,7 @@ body {
 }
 
 video {
-    
+
     width: 100%;
     height: 100%;
 }
@@ -47,15 +75,15 @@ video {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 10%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 95%);
 }
 
+h1 {
+    color: aliceblue;
+    margin-top: 15px;
+}
+
 p {
     color: aliceblue;
     margin-top: 15px;
     font-size: 20px;
-}
-
-h1 {
-    color: aliceblue;
-    margin-top: 15px;
 }
 
 button {
@@ -69,7 +97,31 @@ button {
     border-radius: 4px;
 }
 
+footer {
+    display: flex;
+    background: rgb(95, 177, 177, 0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.footer-paragrafo {
+    color: aliceblue;
+    font-size: 15px;
+    margin: auto;
+}
+
+.whatsapp {
+    width: 50px;
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+
+}
+
 .to-form {
+
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
@@ -81,6 +133,7 @@ button {
     left: -320px;
     transition: left 1s linear;
     z-index: 4;
+    top: 15%;
 }
 
 input {
@@ -116,6 +169,3 @@ textarea {
     z-index: 3;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
-
-
-
