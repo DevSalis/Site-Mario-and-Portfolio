@@ -14,7 +14,8 @@ body {
 
 main {
     display: flex;
-    padding: 30px;
+    left: 10px;
+  
 }
 
 header {
@@ -52,6 +53,11 @@ a {
     position: absolute;
 }
 
+#img-logo-index-2 {
+    width: 150px;
+    margin-left: 5%;
+}
+
 .box-1 {
     width: 50%;
 }
@@ -62,6 +68,10 @@ a {
 
 .box-3 {
     width: 85%;
+    gap: 20px;
+    padding: 15px;
+    margin-left: 0;
+    align-items: center;
 }
 
 .video-backgrund {
@@ -91,6 +101,17 @@ h1 {
     margin-top: 15px;
 }
 
+#h1-projt {
+    color: rgb(133, 191, 241);
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.incon-h1 {
+    width: 30px;
+}
+
 p {
     color: aliceblue;
     margin-top: 15px;
@@ -103,22 +124,60 @@ p {
     margin-top: 15px;
     margin-left: 0%;
     font-size: 17px;
-    
+
 }
 
 .caixa-0 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    left: 10%;
+    margin-top: 8px;
+
+}
+
+.caixa-1 {
+    display: flex;
+    margin-top: 15px;
+    gap: 15%;
+}
+
+.caixa-2 {
+    display: flex;
+    margin-top: 10px;
+    gap: 15%;
+    margin-left: 22%;
 }
 
 .img-github {
     width: 30px;
 }
 
+.mockups-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mockups-buttom {
+    display: flex;
+    flex-direction: column;
+}
+
 .mockup-1 {
-    width: 240px;
-    margin-left: 50px;
+    width: 250px;
+    margin-left: auto;
+}
+
+.mockup-2 {
+    width: 250px;
+    margin-left: auto;
+}
+
+.mockups-links {
+    font-size: 20px;
+    color: rgb(38, 137, 224);
+    margin: auto;
+    cursor: pointer;
 }
 
 button {
