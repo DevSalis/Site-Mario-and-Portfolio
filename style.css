@@ -10,11 +10,12 @@ body {
     height: 100vh;
     flex-direction: column;
     padding-top: 5px;
+    
 }
 
 main {
     display: flex;
-    left: 10px;
+    margin-left: 30px;
   
 }
 
@@ -36,6 +37,24 @@ a {
     margin-left: 90px;
     color: aliceblue;
     align-items: center;
+    text-decoration: none;
+}
+
+#rodolfo-mori {
+    margin-left: 0%;
+    text-decoration: underline;
+}
+
+#link-inicio {
+    margin-left: 0%;
+    text-decoration: underline;
+    color: rgb(133, 191, 241);
+}
+
+#link-enviar-e-mail {
+    margin-left: 0%;
+    text-decoration: underline;
+    color: rgb(133, 191, 241);
 }
 
 #img-box-1 {
@@ -44,6 +63,8 @@ a {
 
 #img-box-2 {
     height: 400px;
+    right: 3%;
+    position: absolute;
 }
 
 #img-box-3 {
@@ -63,7 +84,8 @@ a {
 }
 
 .box-2 {
-    margin-left: 15%;
+    margin-left: 10%;
+   
 }
 
 .box-3 {
@@ -117,6 +139,14 @@ p {
     margin-top: 15px;
     font-size: 17px;
     text-align: justify;
+}
+
+.paragrafo-i-am {
+    color: aliceblue;
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: justify;
+    width: 66%;
 }
 
 .link-git {
