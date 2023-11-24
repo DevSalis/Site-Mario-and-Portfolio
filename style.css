@@ -5,6 +5,7 @@
     font-family: 'Mukta', sans-serif;
 }
 
+
 body {
     display: flex;
     height: 100vh;
@@ -17,6 +18,10 @@ main {
     display: flex;
     margin-left: 30px;
   
+}
+
+#img-responsivo {
+    display: none;
 }
 
 header {
@@ -141,12 +146,33 @@ p {
     text-align: justify;
 }
 
+.paragrafo-responsivo {
+    display: none;
+}
+
 .paragrafo-i-am {
     color: aliceblue;
     margin-top: 15px;
-    font-size: 17px;
+    font-size: 16px;
     text-align: justify;
     width: 66%;
+}
+
+.caixa-redes-sociais {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-redes-sociais {
+    width: 40px;
+}
+
+.link-redes-sociais {
+    color: rgb(38, 137, 224);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .link-git {
@@ -293,4 +319,135 @@ textarea {
     top: 0;
     z-index: 3;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+@media screen and (max-width: 1000px) {
+
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: 'Mukta', sans-serif;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        padding-top: 5px;
+        align-items: center;
+    }
+
+    video {
+        display: none;
+    }
+
+    .video-backgrund {
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+   nav {
+    display: none;
+   }
+
+   #img-box-1 {
+    width: 250px;
+    align-items: center;
+    
+}
+
+    main {
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    p {
+        color: aliceblue;
+        margin-top: 40px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .paragrafo-responsivo {
+        display: flex;
+        margin-top: 10px;
+        color: rgb(38, 137, 224);
+    }
+
+    .box-1 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box-2 {
+        display: none;
+    }
+
+    #img-responsivo {
+       display: flex;
+        height: 220px;
+        bottom: 5%;
+        margin-top: 10px;
+        align-items: center;
+    }
+    
+    .box-3 {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .footer-paragrafo {
+        color: aliceblue;
+        font-size: 10px;
+        margin-left: 10px;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    .whatsapp {
+        width: 60px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .to-form {
+
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 5px;
+        gap: 20px;
+        font-size: 20px;
+        position: fixed;
+        left: -330px;
+        transition: left 1s linear;
+        z-index: 4;
+        top: 15%;
+    }
+
+   
+
+  
+
+
+
+  
+
+
 }
